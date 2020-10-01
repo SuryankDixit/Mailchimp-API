@@ -43,12 +43,12 @@ app.post("/", function(req, res) {
     // When trying to post data to some other server;
     // https.request(url,options,function(response))
 
-    const url = "https://us2.api.mailchimp.com/3.0/lists/b26656deb6";
+    const url = "https://us2.api.mailchimp.com/3.0/lists/LIST_ID"; //get ur list ID
 
     const options = {
         method: "POST",
         // we need some authentication to get the successful resonse
-        auth: "suryank:343ea5e3579615d7dc4854921a05d1fd-us2"
+        auth: "suryank:API_KEY" // Get your API KEY
     }
 
     // http.request() returns an instance of the http.ClientRequest class. The ClientRequest instance is a writable stream. If one needs to upload a file with a POST request, then write to the ClientRequest object.
